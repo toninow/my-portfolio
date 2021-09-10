@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Antonio Benalcázar - Portfolio</title>
+    <title>Antonio Benalcázar</title>
     <meta content="Programador full stack, piensa 2 veces, programa una vez" name="description">
-    <meta content="Antonio Benalcázar, Portafolio" name="keywords">
+    <meta content="Antonio Benalcázar, Portafolio, programador Ecuatoriano" name="keywords">
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
@@ -86,6 +86,77 @@
         .static:hover {
             opacity: 0;
         }
+        
+        .btn1 {
+            padding: 15px 32px;
+            text-transform: uppercase;
+            border-radius: 6px;
+            border: 3px solid var(--color-one);
+            cursor: pointer;
+            transition: background-color 0.5s linear, color 0.5s ease-out, transform 0.3s ease-out;
+        }
+        
+        .btn1:hover {
+            transform: translateY(-5px);
+        }
+        
+        .button-one {
+            background-color: var(--color-one);
+            color: var(--color-two);
+        }
+        
+        .button-one:hover {
+            color: var(--color-one);
+            background-color: var(--color-two);
+        }
+        
+         :root {
+            --color-one: black;
+            --color-two: #FFD700;
+        }
+        
+        .bg {
+            animation: slide 3s ease-in-out infinite alternate;
+            background-image: linear-gradient(-60deg, rgb(0, 0, 0) 50%, rgb(255, 230, 0) 50%);
+            bottom: 0;
+            left: -50%;
+            opacity: .5;
+            position: fixed;
+            right: -50%;
+            top: 0;
+            z-index: -1;
+        }
+        
+        .bg2 {
+            animation-direction: alternate-reverse;
+            animation-duration: 4s;
+        }
+        
+        .bg3 {
+            animation-duration: 5s;
+        }
+        
+        .content1 {
+            background-color: rgba(255, 255, 255, .8);
+            border-radius: .25em;
+            box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+            box-sizing: border-box;
+            left: 50%;
+            padding: 10vmin;
+            position: fixed;
+            text-align: center;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        @keyframes slide {
+            0% {
+                transform: translateX(-25%);
+            }
+            100% {
+                transform: translateX(25%);
+            }
+        }
     </style>
 
 </head>
@@ -103,11 +174,11 @@
                 <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
                 <h1 class="text-light"><a href="index.html">Antonio Benalcázar</a></h1>
                 <div class="social-links mt-3 text-center">
-                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    <a target="blank" href="https://twitter.com/SoloEscuchoRap" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a target="blank" href="https://www.facebook.com/devdev00100101/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a target="blank" href="https://www.instagram.com/antdev0010/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a target="blank" href="https://www.linkedin.com/in/antonio-jose-benalc%C3%A1zar-cabrejo-9870444b/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    <a target="blank" href="https://github.com/toninow" class="github"><i class="bx bxl-github"></i></a>
                 </div>
             </div>
             <nav id="navbar" class="nav-menu navbar">
@@ -115,7 +186,6 @@
                     <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Bienvenido</span></a></li>
                     <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre mí</span></a></li>
                     <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portafolio</span></a></li>
-                    <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Servicios</span></a></li>
                     <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Hablemos</span></a></li>
                 </ul>
             </nav>
@@ -136,7 +206,7 @@
     <main id="main">
 
         <!-- ======= About Section ======= -->
-        <section id="about" class="about">
+        <section id="about" class="skills section-bg">
             <div class="container">
 
                 <div class="section-title">
@@ -171,10 +241,10 @@
                             </div>
                         </div>
                         <p>
-                            llevo 4 años estudiando programación 2 de ellos los llevo trabajando como profesional donde cada dia siempre se programa con algo nuevo.
+                            llevo cuatro años estudiando programación de los cuales dos de ellos como profesional donde cada dia siempre se programa con algo nuevo.
                         </p>
                         <div align="center" style="margin-top: 10%;">
-                            <a target="blank" href="./assets/docs/cvAntonioBenalcazar.pdf"><button type="submit" class="btn" style="background-color: #0e2442; color:white">Descargar cv</button></a>
+                            <a target="blank" href="./assets/docs/cvAntonioBenalcazar.pdf"><button type="submit" class="btn" style="background-color: #FFD700; color:white">Descargar cv</button></a>
                         </div>
                     </div>
                 </div>
@@ -189,7 +259,7 @@
 
                 <div class="section-title">
                     <h2>Habilidades</h2>
-                    <p>Medallas conseguidas en estos 4 años inmerso dentro de este apasionante mundo.</p>
+                    <p>Conseguidas inmerso dentro de este apasionante mundo.</p>
                 </div>
 
                 <div class="row skills-content">
@@ -200,7 +270,7 @@
                                 <tr>
                                     <td>
                                         <figure class="swing">
-                                            <img class="static" src="./assets/img/skills/html5.png" style="width: 100%; height: 100%;" alt="">
+                                            <img src="./assets/img/skills/html5.png" style="width: 100%; height: 100%;" alt="">
                                         </figure>
                                     </td>
                                     <td>
@@ -331,94 +401,43 @@
         </section>
         <!-- End Portfolio Section -->
 
-        <!-- ======= Services Section ======= -->
-        <section id="services" class="services">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Services</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
-                        quidem hic quas.</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-                        <div class="icon"><i class="bi bi-briefcase"></i></div>
-                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                    </div>
-                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon"><i class="bi bi-card-checklist"></i></div>
-                        <h4 class="title"><a href="">Dolor Sitema</a></h4>
-                        <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-                    </div>
-                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon"><i class="bi bi-bar-chart"></i></div>
-                        <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                    </div>
-                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                        <div class="icon"><i class="bi bi-binoculars"></i></div>
-                        <h4 class="title"><a href="">Magni Dolores</a></h4>
-                        <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    </div>
-                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-                        <div class="icon"><i class="bi bi-brightness-high"></i></div>
-                        <h4 class="title"><a href="">Nemo Enim</a></h4>
-                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-                    </div>
-                    <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-                        <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-                        <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-                        <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- End Services Section -->
-
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="contact">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Hablemos</h2>
-                    <p>Si tienes alguna duda o consulta no dudes en chatear conmigo.</p>
-                </div>
-
-                <div class="row" data-aos="fade-in">
-
-                    <div class="col-lg-12 d-flex align-items-stretch">
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
+            <div class="content">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Hablemos</h2>
+                        <p>Si tienes alguna consulta no dudes en chatear conmigo.</p>
                     </div>
-
-                    <div class="col-lg-12 d-flex align-items-stretch">
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form" style="padding: 15%;">
-                            <div class="text-center"><button type="submit" style="background-color: green;"><i class="fa fa-whatsapp"></i> Escríbeme</button></div>
-                        </form>
+                    <div class="row" data-aos="fade-in">
+                        <div class="col-lg-12">
+                            <div align="center" style="margin: 17%;">
+                                <a target="blank" href="https://api.whatsapp.com/send?phone=+593961372191&text=Hola,%20me%20gustaria%20preguntarte%20sobre..">
+                                    <button class="btn1 button-one"> <i class="fa fa-whatsapp"></i> Escríbeme</button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-
             </div>
         </section>
         <!-- End Contact Section -->
-
     </main>
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
         <div class="container">
-            <div class="copyright">
-                &copy; Copyright <strong><span>iPortfolio</span></strong>
-            </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
                 <!-- You can delete the links only if you purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                <p> Diseñado por Antonio Benalcázar</p>
+
             </div>
         </div>
     </footer>
