@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ES">
 
 <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
 
     <title>Antonio Benalcázar</title>
     <meta content="Programador full stack, piensa 2 veces, programa una vez" name="description">
-    <meta content="Antonio Benalcázar, Portafolio, programador Ecuatoriano" name="keywords">
+    <meta content="Antonio Benalcázar, Portafolio, programador Ecuatoriano, programador, Ecuador, Desarrolador" name="keywords">
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
@@ -28,6 +28,19 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FGSRSY8VW2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FGSRSY8VW2');
+    </script>
 
     <style>
         .swing {
@@ -96,6 +109,15 @@
             transition: background-color 0.5s linear, color 0.5s ease-out, transform 0.3s ease-out;
         }
         
+        .btn2 {
+            padding: 15px 32px;
+            text-transform: uppercase;
+            border-radius: 6px;
+            border: 3px solid white;
+            cursor: pointer;
+            transition: background-color 0.5s linear, color 0.5s ease-out, transform 0.3s ease-out;
+        }
+        
         .btn1:hover {
             transform: translateY(-5px);
         }
@@ -108,6 +130,15 @@
         .button-one:hover {
             color: var(--color-one);
             background-color: var(--color-two);
+        }
+        
+        .button-two {
+            background-color: var(--color-one);
+            color: var(--color-two);
+        }
+        
+        .button-two:hover {
+            background-image: url("assets/img/button-english.jpg");
         }
         
          :root {
@@ -157,6 +188,14 @@
                 transform: translateX(25%);
             }
         }
+        
+        .static {
+            position: absolute;
+        }
+        
+        .static:hover {
+            opacity: 0;
+        }
     </style>
 
 </head>
@@ -171,14 +210,23 @@
         <div class="d-flex flex-column">
 
             <div class="profile">
-                <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+                <img src="assets/img/profile-img.webp" alt="" class="img-fluid rounded-circle">
                 <h1 class="text-light"><a href="index.html">Antonio Benalcázar</a></h1>
                 <div class="social-links mt-3 text-center">
-                    <a target="blank" href="https://twitter.com/SoloEscuchoRap" class="twitter"><i class="bx bxl-twitter"></i></a>
-                    <a target="blank" href="https://www.facebook.com/devdev00100101/" class="facebook"><i class="bx bxl-facebook"></i></a>
-                    <a target="blank" href="https://www.instagram.com/antdev0010/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                    <a target="blank" href="https://www.linkedin.com/in/antonio-jose-benalc%C3%A1zar-cabrejo-9870444b/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                    <a target="blank" href="https://github.com/toninow" class="github"><i class="bx bxl-github"></i></a>
+                    <a alt="enlace twitter" target="blank" href="https://twitter.com/SoloEscuchoRap" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a alt="enlace facebook" target="blank" href="https://www.facebook.com/devdev00100101/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a alt="enlace instagram" target="blank" href="https://www.instagram.com/antdev0010/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a alt="enlace linkedin" target="blank" href="https://www.linkedin.com/in/antonio-jose-benalc%C3%A1zar-cabrejo-9870444b/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    <a alt="enlace github" target="blank" href="https://github.com/toninow" class="github"><i class="bx bxl-github"></i></a>
+                </div>
+                <div class="row" data-aos="fade-in">
+                    <div class="col-lg-12">
+                        <div align="center" style="margin: 5%;">
+                            <a href="/en/">
+                                <button style="color: white;" class="btn2 button-two">English</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <nav id="navbar" class="nav-menu navbar">
@@ -189,6 +237,7 @@
                     <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Hablemos</span></a></li>
                 </ul>
             </nav>
+
             <!-- .nav-menu -->
         </div>
     </header>
@@ -211,14 +260,14 @@
 
                 <div class="section-title">
                     <h2>Sobre Mi</h2>
-                    <p>Apasionado por la tecnología desde el 93, el mundo es un lugar fascinante pero si miras a través del cerrojo verás que hay un como y un por qué, es ahí donde tu puedes hacer la diferencia. Atrévete a cambiar, y podrás refactorizar
-                        el mundo.
+                    <p>Tecnólogo en Desarrollo de software, Apasionado por la tecnología desde el 93, dedicado al mundo del arte del desarrollo, capacidad profesional para encausar y resolver problemas, hábil en toma de decisiones, trabajo en equipo, el
+                        mundo es un lugar fascinante pero si miras a través del cerrojo verás que hay un como y un por qué, es ahí donde tu puedes hacer la diferencia. Atrévete a cambiar, y podrás refactorizar el mundo.
                     </p>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-4" data-aos="fade-right">
-                        <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+                        <img style="width: 100%; height: auto" src="assets/img/profile-img.webp" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                         <h3> Desarrollador por naturaleza</h3>
@@ -237,11 +286,12 @@
                                 <ul>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Título:</strong> <span>Tecnólogo en Desarrollo de Software</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Aprendiendo:</strong> <span>Livewire y React.js</span></li>
                                 </ul>
                             </div>
                         </div>
                         <p>
-                            llevo cuatro años estudiando programación de los cuales dos de ellos como profesional donde cada dia siempre se programa con algo nuevo.
+                            llevo cuatro años estudiando programación de los cuales dos de ellos como profesional, manteniendo el foco en ser mejor y mejorar las habilidades en lo que codificas, en donde cada día siempre se programa con algo nuevo.
                         </p>
                         <div class="row" data-aos="fade-in">
                             <div class="col-lg-12">
@@ -276,17 +326,17 @@
                                 <tr>
                                     <td>
                                         <figure class="swing">
-                                            <img src="./assets/img/skills/html5.png" style="width: 100%; height: 100%;" alt="">
+                                            <img style="width: 100%; height: auto" src="./assets/img/skills/html5.webp" alt="">
                                         </figure>
                                     </td>
                                     <td>
                                         <figure class="swing">
-                                            <img src="./assets/img/skills/css3.png" style="width: 100%; height: 100%;" alt="">
+                                            <img style="width: 100%; height: auto" src="./assets/img/skills/css3.webp" alt="">
                                         </figure>
                                     </td>
                                     <td>
                                         <figure class="swing">
-                                            <img src="./assets/img/skills/js.png" style="width: 100%; height: 100%;" alt="">
+                                            <img style="width: 100%; height: auto" src="./assets/img/skills/js.webp" alt="">
                                         </figure>
                                     </td>
                                 </tr>
@@ -300,17 +350,65 @@
                                 <tr>
                                     <td>
                                         <figure class="swing">
-                                            <img src="./assets/img/skills/laravel.png" style="width: 100%; height: 100%;" alt="">
+                                            <img style="width: 100%; height: auto" src="./assets/img/skills/laravel.webp" alt="">
                                         </figure>
                                     </td>
                                     <td>
                                         <figure class="swing">
-                                            <img src="./assets/img/skills/flutter.png" style="width: 100%; height: 100%;" alt="">
+                                            <img style="width: 100%; height: auto" src="./assets/img/skills/flutter.webp" alt="">
                                         </figure>
                                     </td>
                                     <td>
                                         <figure class="swing">
-                                            <img src="./assets/img/skills/php.png" style="width: 100%; height: 100%;" alt="">
+                                            <img style="width: 100%; height: auto" src="./assets/img/skills/php.webp" lt="">
+                                        </figure>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <figure class="swing">
+                                            <img style="width: 100%; height: auto" src="./assets/img/skills/bootstrap.webp" alt="">
+                                        </figure>
+                                    </td>
+                                    <td>
+                                        <figure class="swing">
+                                            <img style="width: 100%; height: auto" src="./assets/img/skills/postgresql.webp" alt="">
+                                        </figure>
+                                    </td>
+                                    <td>
+                                        <figure class="swing">
+                                            <img style="width: 100%; height: auto" src="./assets/img/skills/mysql.webp" lt="">
+                                        </figure>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <figure class="swing">
+                                            <img style="width: 100%; height: auto" src="./assets/img/skills/git.webp" alt="">
+                                        </figure>
+                                    </td>
+                                    <td>
+                                        <figure class="swing">
+                                            <img style="width: 100%; height: auto" src="./assets/img/skills/windows.webp" alt="">
+                                        </figure>
+                                    </td>
+                                    <td>
+                                        <figure class="swing">
+                                            <img style="width: 100%; height: auto" src="./assets/img/skills/linux.webp" lt="">
                                         </figure>
                                     </td>
                                 </tr>
@@ -330,7 +428,7 @@
 
                 <div class="section-title">
                     <h2>Portafolio</h2>
-                    <p>He realizado varios proyectos durante estos años y me ha permitido obtener experiencia y los conocimientos necesarios. </p>
+                    <p>He realizado varios proyectos durante estos años y me ha permitido obtener experiencia, responsabilidad, eficiencia y los conocimientos necesarios para llevar a cabo los proyectos que tu necesitas. </p>
                 </div>
 
                 <div class="row" data-aos="fade-up">
@@ -348,10 +446,10 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-1.gif" class="img-fluid" alt="">
-                            <a target="blank" href="https://www.cruzrojainstituto.edu.ec/">
+                            <img id="myImg" style="width: 100%; height: auto" src="assets/img/portfolio/port1.webp" class="img-fluid" alt="">
+                            <a target="blank" href="https://www.cruzrojainstituto.edu.ec">
                                 <div class="portfolio-links">
-                                    <h4 style="color: black; background-color: white;">Página web istcre</h4>
+                                    <button class="btn1 button-one">Página web istcre</button>
                                 </div>
                             </a>
                         </div>
@@ -359,10 +457,10 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-3.gif" class="img-fluid" alt="">
-                            <a target="blank" href="https://www.cruzrojainstituto.edu.ec/">
+                            <img id="imgDino" style="width: 100%; height: auto" src="assets/img/portfolio/port2.webp" class="img-fluid" alt="">
+                            <a target="blank" href="https://fonap-game.web.app/">
                                 <div class="portfolio-links">
-                                    <h4 style="color: black; background-color: white;">Video juego aprendizaje fonap</h4>
+                                    <button class="btn1 button-one">Video juego aprendizaje Fundación fonap</button>
                                 </div>
                             </a>
                         </div>
@@ -370,10 +468,10 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-2.gif" class="img-fluid" alt="">
-                            <a target="blank" href="https://www.cruzrojainstituto.edu.ec/">
+                            <img id="imgDino" style="width: 100%; height: auto" src="assets/img/portfolio/port3.webp" class="img-fluid" alt="">
+                            <a target="blank" href="https://www.revistaacademica-istcre.edu.ec/">
                                 <div class="portfolio-links">
-                                    <h4 style="color: black; background-color: white;">Revista istcre</h4>
+                                    <button class="btn1 button-one">Revista istcre</button>
                                 </div>
                             </a>
                         </div>
@@ -381,10 +479,10 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-4.gif" class="img-fluid" alt="">
-                            <a target="blank" href="https://www.cruzrojainstituto.edu.ec/">
+                            <img id="imgDino" style="width: 100%; height: auto" src="assets/img/portfolio/port4.webp" class="img-fluid" alt="">
+                            <a target="blank" href="https://admisiones.cruzrojainstituto.edu.ec/">
                                 <div class="portfolio-links">
-                                    <h4 style="color: black; background-color: white;">Admisiones Istcre</h4>
+                                    <button class="btn1 button-one">Admisiones Istcre</button>
                                 </div>
                             </a>
                         </div>
@@ -392,10 +490,10 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-6.gif" class="img-fluid" alt="">
-                            <a target="blank" href="https://www.cruzrojainstituto.edu.ec/">
+                            <img id="imgDino" style="width: 100%; height: auto" src="assets/img/portfolio/port5.webp" class="img-fluid" alt="">
+                            <a target="blank" href="https://www.cruzrojainstituto.edu.ec/cec">
                                 <div class="portfolio-links">
-                                    <h4 style="color: black; background-color: white;">Educación Continua istcre</h4>
+                                    <button class="btn1 button-one">Educación Continua istcre</button>
                                 </div>
                             </a>
                         </div>
@@ -415,8 +513,8 @@
             <div class="content">
                 <div class="container">
                     <div class="section-title">
-                        <h2>Hablemos</h2>
-                        <p>Si tienes alguna consulta no dudes en chatear conmigo.</p>
+                        <h2 style="color: white;">Hablemos</h2>
+                        <p style="color: white;">Si tienes alguna consulta no dudes en chatear conmigo.</p>
                     </div>
                     <div class="row" data-aos="fade-in">
                         <div class="col-lg-12">
@@ -464,7 +562,6 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
